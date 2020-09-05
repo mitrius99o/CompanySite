@@ -2,7 +2,7 @@
 <html>
 <head>
     @await Html.PartialAsync("MetatagsPartial")
-    @await Html.PartialAsync("CssPartial")
+    <link rel="stylesheet" href="~/css/main.css" asp-append-version="true" />
 </head>
 <body>
     <div id="page-wrapper">
@@ -14,11 +14,11 @@
                         @RenderBody()
                     </div>
                 </div>
-                @await  Html.PartialAsync("SidebarParial")
+                @*await  Html.PartialAsync("SidebarParial")*@
             </div>
         </div>
         @await Html.PartialAsync("FooterPartial")
     </div>
-    @await  Html.PartialAsync("ScriptsPartial")
+    <script src="~/js/scripts.min.js" asp-append-version="true"></script>
 </body>
 </html>

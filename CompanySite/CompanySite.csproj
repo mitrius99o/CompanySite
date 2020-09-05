@@ -5,24 +5,37 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="bundleconfig.json" />
+    <Content Remove="compilerconfig.json" />
     <Content Remove="Views\Shared\CssPartial.cshtml" />
   </ItemGroup>
   
   <ItemGroup>
     <Folder Include="Areas\Admin\Новая папка\Controllers\" />
     <Folder Include="Areas\Admin\Новая папка\Views\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Domain\" />
     <Folder Include="Models\ViewComponents\" />
     <Folder Include="Service\" />
-    <Folder Include="wwwroot\css\" />
     <Folder Include="wwwroot\images\" />
-    <Folder Include="wwwroot\js\" />
     <Folder Include="wwwroot\sass\" />
   </ItemGroup>
   
   <ItemGroup>
+    <None Include="bundleconfig.json" />
+    <None Include="compilerconfig.json" />
     <None Include="Views\Shared\CssPartial.cshtml" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.7">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.7" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="3.1.7" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
   </ItemGroup>
 
 </Project>
