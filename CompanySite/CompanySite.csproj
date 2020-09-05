@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Shared\CssPartial.cshtml" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Folder Include="Areas\Admin\Новая папка\Controllers\" />
+    <Folder Include="Areas\Admin\Новая папка\Views\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Domain\" />
+    <Folder Include="Models\ViewComponents\" />
+    <Folder Include="Service\" />
+    <Folder Include="wwwroot\css\" />
+    <Folder Include="wwwroot\images\" />
+    <Folder Include="wwwroot\js\" />
+    <Folder Include="wwwroot\sass\" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <None Include="Views\Shared\CssPartial.cshtml" />
+  </ItemGroup>
+
+</Project>
