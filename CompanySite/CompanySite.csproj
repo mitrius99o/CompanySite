@@ -13,7 +13,6 @@
   <ItemGroup>
     <Folder Include="Areas\Admin\Новая папка\Controllers\" />
     <Folder Include="Areas\Admin\Новая папка\Views\" />
-    <Folder Include="Domain\" />
     <Folder Include="Models\ViewComponents\" />
     <Folder Include="wwwroot\images\" />
     <Folder Include="wwwroot\sass\" />
