@@ -36,7 +36,5 @@ namespace CompanySite.Domain.Entities
 
         [DataType(DataType.Time)]
         public virtual DateTime DateAdded { get; set; }
-
-
     }
 }
