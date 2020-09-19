@@ -22,14 +22,14 @@ namespace CompanySite.Domain
 
             modelBuilder.Entity<IdentityRole>().HasData(new IdentityRole
             {
-                Id = "13254654",
+                Id = "44546e06-8719-4ad8-b88a-f271ae9d6eab",
                 Name = "admin",
                 NormalizedName = "ADMIN"
             });
 
             modelBuilder.Entity<IdentityUser>().HasData(new IdentityUser
             {
-                Id = "h45f8935",
+                Id = "3b62472e-4f66-49fa-a20f-e7685b9565d8",
                 UserName = "admin",
                 NormalizedUserName = "ADMIN",
                 Email = "my@email.com",
@@ -41,27 +41,27 @@ namespace CompanySite.Domain
 
             modelBuilder.Entity<IdentityUserRole<string>>().HasData(new IdentityUserRole<string>
             {
-                RoleId = "453k65ig",
-                UserId = "h45f8935"
+                RoleId = "44546e06-8719-4ad8-b88a-f271ae9d6eab",
+                UserId = "3b62472e-4f66-49fa-a20f-e7685b9565d8"
             });
 
             modelBuilder.Entity<TextField>().HasData(new TextField
             {
-                Id = new Guid("dhv7dkf3"),
+                Id = new Guid("63dc8fa6-07ae-4391-8916-e057f71239ce"),
                 CodeWord = "PageIndex",
                 Title = "Главная"
             });
 
             modelBuilder.Entity<TextField>().HasData(new TextField
             {
-                Id = new Guid("83066d33"),
+                Id = new Guid("70bf165a-700a-4156-91c0-e83fce0a277f"),
                 CodeWord = "PageServices",
                 Title = "Наши услуги"
             });
 
             modelBuilder.Entity<TextField>().HasData(new TextField
             {
-                Id = new Guid("dhv7dkf3"),
+                Id = new Guid("4aa76a4c-c59d-409a-85c1-06e6487f137a"),
                 CodeWord = "PageContacts",
                 Title = "Контакты"
             });
